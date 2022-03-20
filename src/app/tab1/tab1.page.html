@@ -1,17 +1,18 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Tab 1
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
-
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
+<ion-header>
     <ion-toolbar>
-      <ion-title size="large">Tab 1</ion-title>
+        <img src="./assets/icon/logoPg3.png" class="logo" alt="logoPg3">
     </ion-toolbar>
-  </ion-header>
-
-  <app-explore-container name="Tab 1 page"></app-explore-container>
+</ion-header>
+<ion-content class="auth-form">
+    <ion-grid>
+        <ion-row>
+            <ion-col class="background" align-self-center>
+                <span class="header">Create account</span>
+                <ion-button [routerLink]="['/registration']" expand="block" size="small" color="warning"> Sign In</ion-button>
+                <span class="divider line one-line">or</span>
+                <span class="header">Already a user?</span>
+                <ion-button [routerLink]="['/login']" expand="block" size="small" color="danger">Log In</ion-button>
+            </ion-col>
+        </ion-row>
+    </ion-grid>
 </ion-content>
